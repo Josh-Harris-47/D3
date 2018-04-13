@@ -63,47 +63,47 @@ d3.select('.barchart2')
         return d.number/max*100 + "%";
     });
     
-    d3.select('.barchart3')
-        .selectAll('div')
-        .data(data)
-        .enter()
-        .append('div')
-        .style('height', '50px')
-        .style('width',0)
-        .style('background-color', function(d,i){
-            return d3.hsl(d.number/max*150, 0.5, 0.5);
-        })
-        .style('margin', '5px 0');
+d3.select('.barchart3')
+    .selectAll('div')
+    .data(data)
+    .enter()
+    .append('div')
+    .style('height', '50px')
+    .style('width',0)
+    .style('background-color', function(d,i){
+        return d3.hsl(d.number/max*150, 0.5, 0.5);
+    })
+    .style('margin', '5px 0');
 
-    d3.select('.barchart3')
-        .selectAll('div')
-        .data(data)
-        .transition()
-        .duration(3000)
-        .style('width', function(d,i){
-          console.log(d.number);
-            return d.number/max*100 + "%";
-        });
+d3.select('.barchart3')
+    .selectAll('div')
+    .data(data)
+    .transition()
+    .duration(3000)
+    .style('width', function(d,i){
+      console.log(d.number);
+        return d.number/max*100 + "%";
+    });
+    
         
-        
-    d3.select('.barchart4')
-        .selectAll('div')
-        .data(data)
-        .enter()
-        .append('div')
-        .style('height', '50px')
-        .style('width',0)
-        .style('background-color', function(d,i){
-            return d3.hsl(d.number/max*150, 0.5, 0.5);
-        })
-        .style('margin', '5px 0');
+d3.select('.barchart4')
+    .selectAll('div')
+    .data(data)
+    .enter()
+    .append('div')
+    .style('height', '50px')
+    .style('width',0)
+    .style('background-color', function(d,i){
+        return d3.hsl(d.number/max*150, 0.5, 0.5);
+    })
+    .style('margin', '5px 0');
 
-    d3.select('.barchart4')
-        .selectAll('div')
-        .data(data)
-        .transition()
-        .duration(3000)
-        .style('width', function(d,i){
-          console.log(d.number);
-            return d.number/max*100 + "%";
-        });
+d3.select('.barchart4')
+    .selectAll('div')
+    .data(data)
+    .transition()
+    .duration(3000)
+    .style('width', function(d,i){
+      console.log(d.number);
+        return d.number/max*100 + "%";
+    });
